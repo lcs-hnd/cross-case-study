@@ -1,0 +1,60 @@
+non-sorted lists aren't intuitive to machines
+    search algos are used on [] with all sorts of data
+
+binary search
+    does not return target value
+    returns position in the list the target occupies
+    the input list must be sorted
+    tree breakdown
+        input: sorted list
+        output: position in the list of the target value or DNE
+
+algo traits
+    steps in order
+    steps are distinct
+    produces result
+    completes in finite time
+
+algo defined
+    1: determine middle position of the sorted list
+    2: compare the element in the middle position to target element
+    3: if match, return to middle position and end
+    4: if not, check if middle element is smaller than target element if so, go back to step 2
+    5: if greater, check from start to end of the new list
+    6... repeat until found or until sub-list contains only one element. if single element sub-list does not contain the target value end algo
+
+efficiency of binary search
+    worst case scenario is used as a benchmark
+    increasing target value number shows a clear discrepancy between linear and binary in number of tries (n)
+
+big-O 
+    theoretical definition of the complexity of an algo as a function of the size
+    O(n)
+        notation used to describe complexity
+        order of magnitude of complexity
+        a function of the size
+        upper bounds of the algorithm
+
+    complexity is relative
+        thus we compare complexity of algorithms to other related algorithms
+
+    linear search
+        O(n)
+    binary search
+        O(log n)
+
+common complexity
+    linear search
+
+O(1) constant time
+
+
+
+
+    
+
+
+
+
+
+
