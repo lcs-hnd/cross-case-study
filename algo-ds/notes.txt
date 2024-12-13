@@ -48,6 +48,64 @@ common complexity
 
 O(1) constant time
 
+O(log n)    
+    log2 of n + 1
+        logarithmic runtime
+        sublinear
+
+O(n)
+    linear time
+
+polynomial runtime
+    O(n^2)
+        quadratic time
+    O(n^3)
+        cubic runtime
+
+O(n log n)
+    quasi-linear runtime
+
+exponential runtimes
+    O(x^n)
+    brute force
+
+traveling salesman
+    O(n!)
+    given list of cities and the distance between each pair what is the shortest route that visits each city and returns to the origin city
+    the number of cities dramatically increases the amount of options
+    the mathematical relationship that defines this is called a factorio = n!
+    n! = n(n-1)(n-2)...(2)(1)
+    3! = 3 x 2 x 1 = 6
+    basically n x n-1 until n = 1
+    factorial/combinatorial runtime
+    low values of n may use this runtime but with high n values like 200 it will take way an insurmountable amount of time to solve the problem
+    
+determining the worst runtime of an algorithm
+    binary search
+        assuming list is sorted
+            determine middle position, since many languages hold the size no need to go through the list to determine it (constant time) O(1)
+                if this wasn't the case each item would need to be counted one by one (linear time)
+            compare the element in the middle position to target (constant time) O(1)
+            best case is if middle position is target value thus best case is (constant time)
+            if not matched split into sublists until single element sublist is equal to the target value (logarithmic runtime) {since we discard half the values each time}
+        the time complexity of an algorithm will be based on its worst case scenario runtime which in this case is logarithmic O(log n)
+    
+
+        
+
+            
+            
+
+    
+
+
+wait what is n? 
+
+
+
+
+
+
 
 
 
